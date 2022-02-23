@@ -58,14 +58,12 @@ matilda.calcAge();
 
 console.log(jonas.__proto__);
 
-
 // The prototype of the jonas-object is essentially the prototype property of the constructor function.
 // Person.prototype is actually not the prototype of person, but instead, it is what's
 // is going to be used as the prototype of all the objects that are created with the person-constructor=function.
 console.log(Person.prototype);
 
 console.log(jonas.__proto__ === Person.prototype); // true
-
 
 console.log(Person.prototype.isPrototypeOf(jonas)); // true
 console.log(Person.prototype.isPrototypeOf(matilda)); // true
