@@ -17,6 +17,7 @@ const Person = function (firstName, birthYear) {
     }
 };
 
+
 const jonas = new Person('Jonas', 1991);
 console.log(jonas);
 
@@ -35,3 +36,31 @@ console.log(jack);
 // 4. The Object that was created in the beginning is the automatically returned from the constructor function.
    // So the function automatically returns that empty object from the beginning.
    // But actually at this point the object the object no longer needs to be empty.
+
+
+const jonas = new Person('Jonas', 1991);
+const matilda = new Person('Matilda',2017);
+const jack = new Person('Jack', 1975);
+
+// 1. New Object {} is created
+// 2. function is called and the this-keyword will be set to the newly created object.
+//       All this happens only because we are calling the function using the new - Operator.
+// 3. This newly created object {} is linked to a prototype.
+// 4. The Object that was created in the beginning is the automatically returned from the constructor function.
+//    So the function automatically returns that empty object from the beginning.
+//    But actually at this point the object the object no longer needs to be empty.
+
+
+const Person = function (firstName, birthYear) {
+
+};
+
+
+
+const Person = function (firstName, birthYear) {
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+};
+
+
+
