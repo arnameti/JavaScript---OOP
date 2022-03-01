@@ -11,8 +11,6 @@ const PersonProto = {
   },
 };
 
-
-
 const steven = Object.create(PersonProto);
 
 // The StudentProto - Object, that we created earlier is now the prototype of the
@@ -35,7 +33,3 @@ const jay = Object.create(StudentProto);
 jay.init('Jay', 2010, 'Computer Science');
 jay.introduce();
 jay.calcAge();
-
-
-
-
