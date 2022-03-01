@@ -39,4 +39,4 @@ console.log(mike instanceof Person);
 
 
 Student.prototype.constructor = Student;
-console.dir(Student.prototype.constructor);
+console.dir(Student.prototype.constructor); 
